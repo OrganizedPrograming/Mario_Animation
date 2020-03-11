@@ -1,0 +1,159 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+#area{
+width: 100%;
+height:720px;
+position: absolute;
+}
+
+#mario{
+    position: absolute;
+    background: url('mario.png');
+    width: 89.2px;
+    height: 120px;
+    top:485px;
+    left:0px;
+        animation: playmario 1s steps(4) infinite,
+                runmario 5s both infinite linear;
+
+}
+
+@keyframes playmario{
+    100%{background-position: -356.8px;}
+}
+
+@keyframes runmario{
+    0%{left: -50px;}
+    23.6%{left: 470px; top:485px;}
+    24.6{left: 500px; top:370px;}
+    25.6%{top:370px;}
+    28.6%{left:600px; top: 485px;}
+    30.6%{top: 485px;}
+    57%{left: 1115px; top:485px;}
+    64%{left: 1250px; top:205px;}
+    72%{left:1450px; top:205px;}
+    80%{left:1500px; top: 485px;}
+    90%{left: 1700px; top: 485px;}
+    100%{left: 100%;}
+}
+
+#coin{
+position: absolute;
+background: url("coin_mario.png") no-repeat;
+width:50px;
+height: 60px;
+top:320px;
+left: 517px;
+      animation: playcoin 0.8s steps(5) infinite,
+              runcoin 5s infinite both linear;
+
+              animation-delay: 100ms, 1.2s;
+}
+
+@keyframes playcoin{
+    100%{background-position: -250px;}
+}
+
+@keyframes runcoin{
+  0%{left: 517px; top: 320px;opacity: 1;}
+  4.5%{top: 485px; top: 220px;opacity: 1;}
+  7%{left: 517px; top:320px; opacity: 0;}
+}
+#yoshi{
+background: url("yoshy.png") no-repeat;
+height: 100px;
+width: 87.3px;
+left: 850px;
+top: 300px;
+position: absolute;
+}
+
+#bg{
+background: url("background.png") repeat-x;
+height: 720px;
+width: 100%;
+position: absolute;
+}
+
+#clouds{
+background: url("clouds.png") repeat-x;
+height: 720px;
+width: 100%;
+bottom: 60px;
+position: absolute;
+}
+
+#block{
+background: url("block.png") no-repeat;
+width: 74px;
+height: 65px;
+left: 500px;
+top: 320px;
+position: absolute;
+
+}
+
+.brick_first{
+  background: url("brick.png") no-repeat;
+  width: 74px;
+  height: 65px;
+  left: 443px;
+  top: 320px;
+position: absolute;
+}
+
+.brick_second{
+  background: url("brick.png") no-repeat;
+  width: 74px;
+  height: 65px;
+  left: 566px;
+  top: 320px;
+position: absolute;
+}
+
+.brick_third{
+  background: url("brick.png") no-repeat;
+  width: 74px;
+  height: 65px;
+  left: 630px;
+  top: 320px;
+position: absolute;
+}
+
+.brick_fourth{
+  background: url("brick.png") no-repeat;
+  width: 74px;
+  height: 65px;
+  left: 1310px;
+  top: 320px;
+position: absolute;
+}
+
+.brick_fifth{
+  background: url("brick.png") no-repeat;
+  width: 74px;
+  height: 65px;
+  left: 1370px;
+  top: 320px;
+position: absolute;
+}
+
+.single_bush{
+  background: url("single_bush.png") no-repeat;
+  width: 100%;
+  height: 100%;
+  left: 1480px;
+  top: 549px;
+position: absolute;
+}
+
+.double_bush{
+  background: url("double_bush.png") no-repeat;
+  width: 100%;
+  height: 100%;
+  left: 750px;
+  top: 549px;
+position: absolute;
+}
